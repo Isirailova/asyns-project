@@ -4,5 +4,85 @@
   box-sizing: border-box;
 }
 body {
-  background-color: steelblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: transparent;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://news.harvard.edu/wp-content/uploads/2023/11/dog_brains_2500-1600x900.jpg")
+      top/cover no-repeat;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 600px;
+  height: 200px;
+  background-color: hsla(0, 16%, 88%, 0.8);
+}
+h1 {
+  margin: 20px;
+  font-family: Snell Roundhand, cursive;
+  color: rgb(0, 0, 0);
+}
+
+#breedSelect {
+  width: 200px;
+  padding: 10px;
+  font-size: 17px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+#breedSelect option {
+  font-size: 14px;
+  background-color: #fff;
+  color: #000;
+}
+#goButton {
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+#image-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#image-box img {
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .search {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    text-align: center;
+  }
 }
